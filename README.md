@@ -1,13 +1,13 @@
 # lotr-Rotk-fix
-This is the Lord of the Rings Return of the King fix d3d9 wrapper which is based from 13AG d3d9.dll wrapper
+This is the Lord of the Rings Return of the King fix d3d8 wrapper which is based from 13AG d3d8.dll wrapper
 
 https://github.com/ThirteenAG/d3d8-wrapper
 
-Make sure you launch the game one time before you use this fix, go to new game or continue game, go to video and make sure your resolution is 640 x 480 for the d3d9.dll to work 
+Make sure you launch the game one time before you use this fix, go to new game or continue game, go to video and make sure your resolution is 640 x 480 for the d3d8.dll to work 
 
-simply put the d3d9.dll and d3d9.ini into your game folder next to the game exe and your good to go 
+simply put the d3d8.dll and d3d8.ini into your game folder next to the game exe and your good to go 
 
-you can edit settings in d3d9.ini 
+you can edit settings in d3d8.ini 
 
 Default for resolution is 2 (1920 x 1080) 
 
