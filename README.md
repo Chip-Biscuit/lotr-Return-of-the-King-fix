@@ -13,7 +13,7 @@ Default for resolution is 2 (1920 x 1080)
 
 Default for FPS is 60 
 
-if you would like to leave feedback please use the form provided:
+if you would like to leave feedback or submit a bug please use the form provided:
 
 https://docs.google.com/forms/d/e/1FAIpQLSdXS69GSWtpTbtA-kym8EUBYP_jREcyNRiXFoocIoFc-ppwiA/viewform?usp=sharing
 
