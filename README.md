@@ -1,4 +1,5 @@
-# lotr-Rotk-fix
+# lotr-Return-of-the-King-fix
+
 This is the Lord of the Rings Return of the King fix d3d8 wrapper which is based from 13AG d3d8.dll wrapper
 
 https://github.com/ThirteenAG/d3d8-wrapper
