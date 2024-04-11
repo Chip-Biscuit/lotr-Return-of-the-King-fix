@@ -621,6 +621,18 @@ void ForceWindowed(D3DPRESENT_PARAMETERS* pPresentationParameters)
                 uFlags |= SWP_NOMOVE;
 
             SetWindowPos(hwnd, bAlwaysOnTop ? HWND_TOPMOST : HWND_NOTOPMOST, left, top, pPresentationParameters->BackBufferWidth, pPresentationParameters->BackBufferHeight, uFlags);
+
+            // Release the cursor confinement when the game window loses focus
+            if (GetForegroundWindow() != hwnd)
+                ClipCursor(nullptr);
+            else {
+                // Clip the cursor to the game window
+                RECT windowRect;
+                GetClientRect(hwnd, &windowRect);
+                ClientToScreen(hwnd, reinterpret_cast<POINT*>(&windowRect.left));
+                ClientToScreen(hwnd, reinterpret_cast<POINT*>(&windowRect.right));
+                ClipCursor(&windowRect);
+            }
         }
     }
 }
