@@ -56,6 +56,7 @@ bool bDoNotNotifyOnTaskSwitch;
 bool bDisplayFPSCounter;
 float fFPSLimit;
 int nFullScreenRefreshRateInHz;
+bool bFOV;
 
 char WinDir[MAX_PATH + 1];
 
@@ -397,6 +398,56 @@ void PerformHexEdits4() {
 }
 
 // chip - 4: resolution
+//=======================================================================================================================================================================================
+
+//=======================================================================================================================================================================================
+// chip - 5: fov
+
+void PerformHexEdit5() {
+    // Read the new float value
+    float floatNewValue = 0.02f;
+
+    // Define the offset to write the new float value
+    DWORD offset = 0x005361DC;
+
+    // Open the process to write memory
+    HANDLE hProcess = OpenProcess(PROCESS_VM_WRITE | PROCESS_VM_OPERATION, FALSE, GetCurrentProcessId());
+    if (hProcess == NULL) {
+        DX_ERROR("Failed to open process.");
+        return;
+    }
+
+    // Change memory protection to allow writing
+    DWORD oldProtect;
+    if (!VirtualProtectEx(hProcess, reinterpret_cast<LPVOID>(offset), sizeof(float), PAGE_EXECUTE_READWRITE, &oldProtect)) {
+        DX_ERROR("Failed to change memory protection.");
+        CloseHandle(hProcess);
+        return;
+    }
+
+    // Write the new value to memory
+    if (!WriteProcessMemory(hProcess, reinterpret_cast<LPVOID>(offset), &floatNewValue, sizeof(float), NULL)) {
+        DX_ERROR("Failed to write memory.");
+        VirtualProtectEx(hProcess, reinterpret_cast<LPVOID>(offset), sizeof(float), oldProtect, &oldProtect); // Restore protection before exit
+        CloseHandle(hProcess);
+        return;
+    }
+
+    // Restore original protection
+    DWORD dummy;
+    if (!VirtualProtectEx(hProcess, reinterpret_cast<LPVOID>(offset), sizeof(float), oldProtect, &dummy)) {
+        DX_ERROR("Failed to restore memory protection.");
+        CloseHandle(hProcess);
+        return;
+    }
+
+    DX_PRINT("Value successfully updated.");
+
+    CloseHandle(hProcess);
+}
+
+
+// chip - 5: fov
 //=======================================================================================================================================================================================
 
 // List of registered window classes and procedures
@@ -1214,6 +1265,7 @@ bool WINAPI DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
             bBorderlessFullscreen = GetPrivateProfileInt("FORCEWINDOWED", "BorderlessFullscreen", 0, path) != 0;
             bAlwaysOnTop = GetPrivateProfileInt("FORCEWINDOWED", "AlwaysOnTop", 0, path) != 0;
             bDoNotNotifyOnTaskSwitch = GetPrivateProfileInt("FORCEWINDOWED", "DoNotNotifyOnTaskSwitch", 0, path) != 0;
+            bFOV = GetPrivateProfileInt("FOV", "fov", 0, path) != 0;
             
             if (fFPSLimit > 0.0f)
             {
@@ -1239,6 +1291,11 @@ bool WINAPI DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
                     VirtualProtect((LPVOID)(addr + 6), 4, Protect, &Protect);
                     bForceWindowedMode = false;
                 }
+            }
+
+            if (bFOV)
+            {
+                PerformHexEdit5();
             }
 
             if (bDoNotNotifyOnTaskSwitch)
