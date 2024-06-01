@@ -14,7 +14,7 @@ Default for resolution is 2 (1920 x 1080)
 
 Default for FPS is 60 
 
-Default for fov is 0 (off) you can turn it on in the ini with fov = 1 (on) this will slightly zoom out the fov in the game. this setting is only on or off in this fix.
+Default for fov is 0 (off) you can turn it on in the ini with fov = 1 (on) this will slightly zoom out the fov in the game. this setting is only on or off in this fix. issues: slightly wonky menu and upside down spears.
 
 if you would like to leave feedback or submit a bug please use the form provided:
 
