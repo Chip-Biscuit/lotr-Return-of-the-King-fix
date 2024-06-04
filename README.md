@@ -4,17 +4,19 @@ This is the Lord of the Rings Return of the King fix d3d8 wrapper which is based
 
 https://github.com/ThirteenAG/d3d8-wrapper
 
-Make sure you launch the game one time before you use this fix, go to new game or continue game, go to video and make sure your resolution is 640 x 480 for the d3d8.dll to work 
+You will need to go to this website here - http://ps2wide.net/lpc.html : go to - list of patches for PC and scroll down to - The Lord of the Rings: The Return of the King and click download and follow the instructions you need,
+LOTRW.DLL and LOTR.INI copy and paste them into your game directory next to your ROTK.exe you must then use the D3D8.DLL and D3D8.INI from this fix along with those two files from the other fix, this will then fix widescreen properly but, 
+also include fps fix, fov fix, and all the other fixes in our dll along with nemesis2000 awesome widescreen fix! you can enter your screen resolution in LOTR.INI and you can change all other fix settings in D3D8.INI.  
 
-simply put the d3d8.dll and d3d8.ini into your game folder next to the game exe and your good to go 
+simply put the D3D8.DLL and D3D8.INI from this fix and LOTRW.DLL & LOTR.INI from nemesis2000 fix into your game folder next to the game exe and your good to go. 
 
-you can edit settings in d3d8.ini 
+resolution can be edited in LOTR.INI screen width and screen height this automatically calculates your aspect ratio.
 
-Default for resolution is 2 (1920 x 1080) 
+all other settings can be edited in D3D8.INI
 
-Default for FPS is 60 
+Default for FPS is 60 you can change it in d3d8.ini.
 
-Default for fov is 0 (off) you can turn it on in the ini with fov = 1 (on) this will slightly zoom out the fov in the game. this setting is only on or off in this fix. issues: slightly wonky menu and upside down spears.
+Default for fov is 0 (off) you can turn it on in the ini with fov = 1 (on) this will slightly zoom out the fov in the game. this setting is only on or off in this fix. 
 
 if you would like to leave feedback or submit a bug please use the form provided:
 
@@ -27,3 +29,5 @@ we have changed the resolution part of the menu so that only shows the width as 
 Team: 
 
 Chip, JokerAlex21, JukedLuke, Blankname.
+
+credit to nemesis2000 for the awesome widescreen fix.
