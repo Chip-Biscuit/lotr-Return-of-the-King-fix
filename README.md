@@ -28,6 +28,6 @@ we have changed the resolution part of the menu so that only shows the width as 
 
 Team: 
 
-Chip, JokerAlex21, JukedLuke, Blankname.
+Chip, JokerAlex21, Blankname.
 
 credit to nemesis2000 for the awesome widescreen fix.
