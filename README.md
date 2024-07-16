@@ -20,8 +20,6 @@ https://docs.google.com/forms/d/e/1FAIpQLSdXS69GSWtpTbtA-kym8EUBYP_jREcyNRiXFooc
 
 brought to you by Fix Enhancers 
 
-we have changed the resolution part of the menu so that only shows the width as there was an issue with it showing incorrectly in full.
-
 Team: 
 
 Chip, JokerAlex21, Blankname.
