@@ -1,14 +1,10 @@
 # lotr-Return-of-the-King-fix
 
-This is the Lord of the Rings Return of the King fix d3d8 wrapper which is based from 13AG d3d8.dll wrapper
-
-https://github.com/ThirteenAG/d3d8-wrapper
+simply go to releases download lotrRotkfix.zip put the D3D8.DLL and D3D8.INI from this fix and LOTRW.DLL & LOTR.INI from nemesis2000 fix into your game folder next to the game exe and your good to go. 
 
 You will need to go to this website here - http://ps2wide.net/lpc.html : go to - list of patches for PC and scroll down to - The Lord of the Rings: The Return of the King and click download and follow the instructions you need,
 LOTRW.DLL and LOTR.INI copy and paste them into your game directory next to your ROTK.exe you must then use the D3D8.DLL and D3D8.INI from this fix along with those two files from the other fix, this will then fix widescreen properly but, 
 also include fps fix, fov fix, and all the other fixes in our dll along with nemesis2000 awesome widescreen fix! you can enter your screen resolution in LOTR.INI and you can change all other fix settings in D3D8.INI.  
-
-simply go to releases download lotrRotkfix.zip put the D3D8.DLL and D3D8.INI from this fix and LOTRW.DLL & LOTR.INI from nemesis2000 fix into your game folder next to the game exe and your good to go. 
 
 resolution can be edited in LOTR.INI screen width and screen height this automatically calculates your aspect ratio.
 
@@ -31,3 +27,7 @@ Team:
 Chip, JokerAlex21, Blankname.
 
 credit to nemesis2000 for the awesome widescreen fix.
+
+This is the Lord of the Rings Return of the King fix d3d8 wrapper which is based from 13AG d3d8.dll wrapper
+
+https://github.com/ThirteenAG/d3d8-wrapper
