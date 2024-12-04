@@ -1,8 +1,6 @@
 # lotr-Return-of-the-King-fix
 
-This is the Lord of the Rings Return of the King fix d3d8 wrapper which is based from 13AG d3d8.dll wrapper
-
-https://github.com/ThirteenAG/d3d8-wrapper
+This is the Lord of the Rings Return of the King fix d3d8 wrapper.
 
 You will need to go to this website here - http://ps2wide.net/lpc.html : go to - list of patches for PC and scroll down to - The Lord of the Rings: The Return of the King and click download and follow the instructions you need,
 LOTRW.DLL and LOTR.INI copy and paste them into your game directory next to your ROTK.exe you must then use the D3D8.DLL and D3D8.INI from this fix along with those two files from the other fix, this will then fix widescreen properly but, 
