@@ -20,6 +20,8 @@ if you would like to leave feedback or submit a bug please use the form provided
 
 https://docs.google.com/forms/d/e/1FAIpQLSdXS69GSWtpTbtA-kym8EUBYP_jREcyNRiXFoocIoFc-ppwiA/viewform?usp=sharing
 
+credit to Elisha Riedlinger for the base wrapper and 13 AG.
+
 brought to you by Fix Enhancers 
 
 we have changed the resolution part of the menu so that only shows the width as there was an issue with it showing incorrectly in full.
