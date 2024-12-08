@@ -16,9 +16,9 @@ Default for FPS is 60 you can change it in d3d8.ini.
 
 Default for fov is 0 (off) you can turn it on in the ini with fov = 1 (on) this will slightly zoom out the fov in the game. this setting is only on or off in this fix. 
 
-if you would like to leave feedback or submit a bug please use the form provided:
+If you have any issues please go to discord for help 
 
-https://docs.google.com/forms/d/e/1FAIpQLSdXS69GSWtpTbtA-kym8EUBYP_jREcyNRiXFoocIoFc-ppwiA/viewform?usp=sharing
+https://discord.gg/pZwkHrTF8X
 
 credit to Elisha Riedlinger for the base wrapper and 13 AG.
 
