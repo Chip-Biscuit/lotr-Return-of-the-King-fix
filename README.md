@@ -12,9 +12,9 @@ resolution can be edited in LOTR.INI screen width and screen height this automat
 
 all other settings can be edited in D3D8.INI
 
-Default for FPS is 60 you can change it in d3d8.ini.
+Default for FPS is 0 - 240ish max you can cap it as you wish in d3d8.ini.
 
-Default for fov is 0 (off) you can turn it on in the ini with fov = 1 (on) this will slightly zoom out the fov in the game. this setting is only on or off in this fix. 
+Default for fov is 0 (off) you can turn it on in the ini with fov = 1 (on) this will slightly zoom out the fov in the game. this setting is only on or off in this fix.
 
 If you have any issues please go to discord for help 
 
